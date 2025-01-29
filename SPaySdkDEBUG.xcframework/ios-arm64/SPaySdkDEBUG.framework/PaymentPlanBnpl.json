@@ -1,0 +1,37 @@
+{
+  "offerText" : "Я соглашаюсь с <url=https:\/\/platichastyami.ru\/dogovor_oferty>условиями договора<\/url> и <url=https:\/\/platichastyami.ru\/soglashenie_ob_ispolzovanii_pep>соглашения<\/url>. Договор заключается с ООО «ЦНФС»",
+  "isBnplEnabled" : true,
+  "buttonBnpl" : {
+    "content" : "Разбить на 4 платежа",
+    "header" : "Плати частями",
+    "activeButtonLogo" : "https:\/\/cms-res-web.online.sberbank.ru\/sberpay\/SDK\/activeButtonLogo.png",
+    "inactiveButtonLogo" : "https:\/\/cms-res-web.online.sberbank.ru\/sberpay\/SDK\/inactiveButtonLogo.png"
+  },
+  "graphBnpl" : {
+    "content" : "4 платежа раз в 2 недели",
+    "header" : "График платежей",
+    "payments" : [
+      {
+        "date" : "21 Декабря",
+        "amount" : 187500,
+        "currencyCode" : "643"
+      },
+      {
+        "date" : "4 Января",
+        "amount" : 187500,
+        "currencyCode" : "643"
+      },
+      {
+        "date" : "18 Января",
+        "amount" : 187500,
+        "currencyCode" : "643"
+      },
+      {
+        "date" : "1 Февраля",
+        "amount" : 187500,
+        "currencyCode" : "643"
+      }
+    ],
+    "text" : "Спишем сегодня"
+  }
+}

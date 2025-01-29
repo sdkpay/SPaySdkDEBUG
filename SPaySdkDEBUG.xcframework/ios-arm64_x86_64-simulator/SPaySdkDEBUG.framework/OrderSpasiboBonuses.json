@@ -1,0 +1,11 @@
+{
+    "precalculateBonusesInfo" : {
+        "bonusesWithoutDeduction" : "450",
+        "bonusesIsDeducted" : "22"
+    },
+    "loyaltyAppInfo" : {
+        "minPointsAmount" : 0,
+        "maxPointsAmount" : 4940,
+        "pointsPaymentAmount" : 980859
+    }
+}

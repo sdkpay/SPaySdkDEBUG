@@ -1,0 +1,148 @@
+{
+  "paymentToolInfo" : {
+    "paymentToolList" : [
+        {
+          "isSpPaymentToolsPriority" : true,
+          "precalculateBonuses": "147",
+          "paymentSourceType" : "OverdraftCard",
+          "financialProductId" : "40817810138260194230",
+          "cardLogoUrl" : "https:\/\/cms-res-web.online.sberbank.ru\/sberpay\/Card\/ds_mc_36_visa.png",
+          "productName" : "Visa Classic",
+          "paymentId" : 1,
+          "cardNumber" : "6478",
+          "isSpPaymentTools" : true,
+          "amountData" : {
+            "amount" : 2000000,
+            "currency" : "810"
+          },
+          "priorityCard" : true,
+          "paymentSystemType" : "VISA"
+        },
+      {
+        "isSpPaymentToolsPriority" : true,
+        "precalculateBonuses": "147",
+        "paymentSourceType" : "OverdraftCard",
+        "financialProductId" : "40817810132331111",
+        "cardLogoUrl" : "https:\/\/cms-res-web.online.sberbank.ru\/sberpay\/Card\/ds_mc_36_visa.png",
+        "productName" : "Visa Classic",
+        "paymentId" : 4,
+        "cardNumber" : "6478",
+        "isSpPaymentTools" : true,
+        "amountData" : {
+          "amount" : 3000,
+          "currency" : "810"
+        },
+        "priorityCard" : false,
+        "paymentSystemType" : "VISA"
+      },
+      {
+        "isSpPaymentToolsPriority" : true,
+        "precalculateBonuses": "147",
+        "paymentSourceType" : "OverdraftCard",
+        "financialProductId" : "40817810132331111",
+        "cardLogoUrl" : "https:\/\/cms-res-web.online.sberbank.ru\/sberpay\/Card\/ds_mc_36_visa.png",
+        "productName" : "Visa Classic",
+        "paymentId" : 5,
+        "cardNumber" : "6478",
+        "isSpPaymentTools" : true,
+        "amountData" : {
+          "amount" : 49999000,
+          "currency" : "810"
+        },
+        "priorityCard" : false,
+        "paymentSystemType" : "VISA"
+      },
+      {
+        "paymentSourceType" : "DebitCard",
+        "precalculateBonuses": "123",
+        "financialProductId" : "40817810638260194311",
+        "cardLogoUrl" : "https:\/\/cms-res-web.online.sberbank.ru\/sberpay\/Card\/ds_mc_36_visa.png",
+        "productName" : "MasterCard Сберкарта",
+        "paymentId" : 6,
+        "cardNumber" : "1966",
+        "isSpPaymentTools" : true,
+        "amountData" : {
+          "amount" : 1,
+          "currency" : "810"
+        },
+        "priorityCard" : false,
+        "paymentSystemType" : "MASTERCARD"
+      }
+    ],
+    "additionalCards" : true,
+    "isSpPaymentToolsNeedUpdate" : false
+  },
+  "merchantInfo" : {
+    "merchantName" : "Мир технологий",
+    "logoUrl" : "https:\/\/test.stat.online.sberbank.ru\/SBERCMS\/sberpay\/781000012764.png",
+    "bindingIsNeeded" : false,
+    "bindingSafeText" : "Тестовый текст для связок, очень большой текст"
+  },
+  "formInfo" : {
+    "notEnoughBalanceText" : "Кажется не хватает денег на карте",
+    "onlyPartPayText" : "Не хватает денег, но Вы можете оплатить частями"
+  },
+  "promoInfo" : {
+    "bannerList" : [
+      {
+        "iconUrl" : "https:\/\/cms-res-web.online.sberbank.ru\/sberpay\/SDK\/sbp.png",
+        "buttons" : [
+          {
+            "type" : "View",
+            "deeplinkIos" : "transfers\/m2mPull?path=create",
+            "deeplinkAndroid" : "android-app:\/\/ru.sberbankmobile\/android-app\/ru.sberbankmobile\/transfers\/m2mPull?action=create"
+          }
+        ],
+        "hint" : "Не хватает денег для оплаты. Пополните карты через СБП",
+        "type" : "sbp",
+        "header" : "Перевести себе по СБП",
+        "text" : "С карты другого банка"
+      },
+      {
+        "iconUrl" : "https:\/\/cms-res-web.online.sberbank.ru\/sberpay\/SDK\/credit.png",
+        "buttons" : [
+          {
+            "type" : "View",
+            "deeplinkIos" : "creditcardorder\/order?sourceType=external&entryPoint=SDKSberpay",
+            "deeplinkAndroid" : "android-app:\/\/ru.sberbankmobile\/android-app\/ru.sberbankmobile\/creditcardorder\/order?sourceType=external&entryPoint=SDKSberpay"
+          }
+        ],
+        "hint" : "Не хватает денег для оплаты, но вы можете выпустить кредитку",
+        "type" : "creditCard",
+        "header" : "Выпустить кредитную карту",
+        "text" : "120 дней без %"
+      },
+      {
+        "iconUrl" : "https:\/\/cms-res-web.online.sberbank.ru\/sberpay\/SDK\/debit.png",
+        "buttons" : [
+          {
+            "deeplinkIos" : "mdcard\/mdcardrequest?segment=ssberkartamir",
+            "title" : "Выпустить карту",
+            "deeplinkAndroid" : "android-app:\/\/ru.sberbankmobile\/android-app\/ru.sberbankmobile\/mdcard\/mdcardrequest?segment=ssberkartamir",
+            "type" : "Full"
+          },
+          {
+            "type" : "Cancel",
+            "title" : "К способам оплаты"
+          }
+        ],
+        "hint" : "Но можно выпустить цифровую СберКарту всего за пару нажатий",
+        "type" : "debitCard",
+        "header" : "У вас нет активных карт",
+        "text" : "Но можно выпустить цифровую СберКарту всего за пару нажатий"
+      }
+    ],
+    "hint" : "Не хватает денег для оплаты. Пополните карты или выпустите кредитку"
+  },
+  "orderInfo" : {
+    "orderAmount" : {
+      "amount" : 499000,
+      "currency" : "643"
+    }
+  },
+  "userInfo" : {
+    "firstName" : "Сергей",
+    "gender" : 1,
+    "lastName" : "Ч."
+  }
+}

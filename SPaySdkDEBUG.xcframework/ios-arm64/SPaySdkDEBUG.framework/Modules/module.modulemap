@@ -1,0 +1,11 @@
+framework module SPaySdkDEBUG {
+  umbrella header "SPaySdkDEBUG.h"
+  export *
+
+  module * { export * }
+}
+
+module SPaySdkDEBUG.Swift {
+  header "SPaySdkDEBUG-Swift.h"
+  requires objc
+}
