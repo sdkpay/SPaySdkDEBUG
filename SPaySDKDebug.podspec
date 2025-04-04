@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.authors      = { "AlexSpb199" => "https://t.me/AlexSpb199", "SeryoginMA" => "seroginma@gmail.com" }
   spec.platform     = :ios, "14.0"
-  spec.source       = { :git => "https://github.com/Sdkpay/SPaySdkDEBUG.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/sdkpay/SPaySdkDEBUG.git", :tag => "#{spec.version}" }
   spec.vendored_frameworks = "SPaySdkDEBUG.xcframework"
-  spec.dependency 'ClickstreamSdk', '~> 1.5.0'
+  spec.dependency 'ClickstreamSDK', '~> 1.5.0'
 
 end

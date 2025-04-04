@@ -22,7 +22,8 @@
         "payLoading" : "Обрабатываем заявку. Следите за статусом в Истории приложения СберБанка.",
         "logoutTitle" : "Управляйте привязанными устройствами в разделе SberPay приложения СберБанка",
         "noPaymentsAccountsSubtitle" : "Откройте его за пару минут в СберБанк Онлайн",
-        "spasiboTitle" : "СберСпасибо"
+        "spasiboTitle" : "СберСпасибо",
+        "payBindingErrorDescription": "Но вы можете оплатить другой картой Сбера"
     },
     "featuresToggle" : [
         {
@@ -92,9 +93,21 @@
         {
             "name" : "payWithBonuses",
             "value" : true
+        },
+        {
+            "name" : "payWithBinding",
+            "value" : false
         }
     ],
     "bankApps" : [
+        {
+            "appId" : 5,
+            "authLink" : "app-online-ios://sbolidexternallogin/",
+            "utilLink" : "app-online-ios://sbolonline/",
+            "iconURL" : "https://cms-res-web.online.sberbank.ru/sberpay/SDK/budgetonline.png",
+            "name" : "Онлайн киоск",
+            "type" : "prom"
+        },
         {
             "appId" : 4,
             "authLink" : "budgetonline-ios://sbolidexternallogin/",

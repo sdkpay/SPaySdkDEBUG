@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SPaySdkDEBUG
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SPaySdkDEBUG
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFAudio
 import Combine
 import CommonCrypto
@@ -27,7 +27,7 @@ public enum NetworkState : Swift.String, Swift.CaseIterable, Swift.Codable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [SPaySdkDEBUG.NetworkState]
   public typealias RawValue = Swift.String
-  public static var allCases: [SPaySdkDEBUG.NetworkState] {
+  nonisolated public static var allCases: [SPaySdkDEBUG.NetworkState] {
     get
   }
   public var rawValue: Swift.String {
@@ -45,7 +45,7 @@ public enum DebugLogLevel : Swift.String, Swift.CaseIterable, Swift.Codable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [SPaySdkDEBUG.DebugLogLevel]
   public typealias RawValue = Swift.String
-  public static var allCases: [SPaySdkDEBUG.DebugLogLevel] {
+  nonisolated public static var allCases: [SPaySdkDEBUG.DebugLogLevel] {
     get
   }
   public var rawValue: Swift.String {
@@ -67,25 +67,15 @@ public enum SBAxis {
   @objc public init(sbp: Swift.Bool = true, creditCard: Swift.Bool = true, debitCard: Swift.Bool = true)
   @objc deinit
 }
-@objc @IBDesignable @_Concurrency.MainActor(unsafe) final public class SBPButton : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) final public var tapAction: SPaySdkDEBUG.Action?
-  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @IBDesignable @_Concurrency.MainActor @preconcurrency final public class SBPButton : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency final public var tapAction: SPaySdkDEBUG.Action?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @objc public enum SPayState : Swift.Int {
   case success = 0
   case waiting
-  case cancel
-  case error
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public enum SPayTokenState : Swift.Int {
-  case success = 0
   case cancel
   case error
   public init?(rawValue: Swift.Int)
@@ -107,7 +97,7 @@ extension SPaySdkDEBUG.SBShimmeringView {
   }
 }
 @objc(SBindingPaymentRequest) final public class SBindingPaymentRequest : ObjectiveC.NSObject {
-  @objc public init(apiKey: Swift.String, merchantLogin: Swift.String, bankInvoiceId: Swift.String, orderNumber: Swift.String, bindingId: Swift.String)
+  @objc public init(apiKey: Swift.String, merchantLogin: Swift.String, bankInvoiceId: Swift.String, orderNumber: Swift.String, bindingId: Swift.String, redirectUri: Swift.String)
   @objc deinit
 }
 @objc(SBankInvoiceIdPaymentRequest) final public class SBankInvoicePaymentRequest : ObjectiveC.NSObject {
@@ -133,17 +123,30 @@ extension SPaySdkDEBUG.SBShimmeringView {
   @objc public static var isReadyForSPay: Swift.Bool {
     @objc get
   }
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func payWithBankInvoiceId(with viewController: UIKit.UIViewController, paymentRequest: SPaySdkDEBUG.SBankInvoicePaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func payWithPaymentAccounts(with viewController: UIKit.UIViewController, paymentRequest: SPaySdkDEBUG.SBankInvoicePaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func payWithPaymentAccounts(paymentRequest: SPaySdkDEBUG.SBankInvoicePaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func payWithoutRefresh(with viewController: UIKit.UIViewController, paymentRequest: SPaySdkDEBUG.SBankInvoicePaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func pay(with viewController: UIKit.UIViewController, paymentRequest: SPaySdkDEBUG.SBankInvoicePaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
+  @objc public static func pay(view: UIKit.UIViewController, method: SPaySdkDEBUG.SPayMethod, request: SPaySdkDEBUG.SPaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ localSessionId: Swift.String, _ bankInvoiceId: Swift.String, _ description: Swift.String) -> Swift.Void)
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func payWithPartPay(with viewController: UIKit.UIViewController, paymentRequest: SPaySdkDEBUG.SBankInvoicePaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func payWithBankInvoiceId(paymentRequest: SPaySdkDEBUG.SBankInvoicePaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func payWithoutRefresh(paymentRequest: SPaySdkDEBUG.SBankInvoicePaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func pay(paymentRequest: SPaySdkDEBUG.SBankInvoicePaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func payWithPartPay(paymentRequest: SPaySdkDEBUG.SBankInvoicePaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func payWithBinding(with viewController: UIKit.UIViewController, paymentRequest: SPaySdkDEBUG.SBindingPaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
+  @available(*, deprecated, message: "Используйте новый метод pay")
   @objc public static func payWithBonuses(paymentRequest: SPaySdkDEBUG.SBankInvoicePaymentRequest, completion: @escaping (_ state: SPaySdkDEBUG.SPayState, _ info: Swift.String, _ localSessionId: Swift.String?) -> Swift.Void)
   @objc public static func getAuthURL(_ url: Foundation.URL)
   @objc public static func setBankScheme(_ url: Foundation.URL) throws
@@ -152,22 +155,22 @@ extension SPaySdkDEBUG.SBShimmeringView {
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc(SPaymentRequest) final public class SPaymentRequest : ObjectiveC.NSObject {
-  @objc convenience public init(orderId: Swift.String, paymentToken: Swift.String)
-  @objc convenience public init(orderId: Swift.String, paymentTokenId: Swift.String)
-  @objc deinit
+@objc(SPayMethod) public enum SPayMethod : Swift.Int {
+  case `default`
+  case withBankInvoiceId
+  case withBonuses
+  case withoutRefresh
+  case withPaymentAccount
+  case withPartPay
+  case withBinding
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
-@_hasMissingDesignatedInitializers @objc(SPaymentTokenRequest) final public class SPaymentTokenRequest : ObjectiveC.NSObject {
-  @objc convenience public init(merchantLogin: Swift.String?, orderNumber: Swift.String, orderId: Swift.String? = nil, bankInvoiceId: Swift.String? = nil, redirectUri: Swift.String)
-  @objc convenience public init(redirectUri: Swift.String, merchantLogin: Swift.String?, amount: Swift.Int, currency: Swift.String, mobilePhone: Swift.String?, orderNumber: Swift.String, recurrentExipiry: Swift.String, recurrentFrequency: Swift.Int, apiKey: Swift.String? = nil)
-  @objc deinit
-}
-@objc(SPaymentTokenResponseModel) final public class SPaymentTokenResponseModel : ObjectiveC.NSObject {
-  @objc final public var paymentToken: Swift.String?
-  @objc final public var paymentTokenId: Swift.String?
-  @objc final public var tokenExpiration: Swift.Int
-  @objc final public var error: Swift.String?
-  @objc public init(paymentToken: Swift.String? = nil, paymentTokenId: Swift.String? = nil, tokenExpiration: Swift.Int = 0, error: Swift.String? = nil)
+@objc(SPaymentRequest) final public class SPaymentRequest : ObjectiveC.NSObject {
+  @objc public init(apiKey: Swift.String, bankInvoiceId: Swift.String, orderNumber: Swift.String, merchantLogin: Swift.String, redirectUri: Swift.String, binding: Swift.String? = nil)
   @objc deinit
 }
 extension UIKit.UIImageView : SPaySdkDEBUG.SBShimmeringView {
@@ -184,16 +187,24 @@ extension UIKit.UITableViewCell : SPaySdkDEBUG.ReusableView {
 extension UIKit.UITableViewHeaderFooterView : SPaySdkDEBUG.ReusableView {
 }
 extension UIKit.UITableView {
-  @_Concurrency.MainActor(unsafe) public func register<T>(cellClass: T.Type) where T : UIKit.UITableViewCell
-  @_Concurrency.MainActor(unsafe) public func register<T>(aClass: T.Type) where T : UIKit.UITableViewHeaderFooterView
-  @_Concurrency.MainActor(unsafe) public func dequeueResuableCell<T>(forIndexPath indexPath: Foundation.IndexPath) -> T where T : UIKit.UITableViewCell
-  @_Concurrency.MainActor(unsafe) public func dequeueReusableHeaderFooterView<T>() -> T where T : UIKit.UITableViewHeaderFooterView
+  @_Concurrency.MainActor @preconcurrency public func register<T>(cellClass: T.Type) where T : UIKit.UITableViewCell
+  @_Concurrency.MainActor @preconcurrency public func register<T>(aClass: T.Type) where T : UIKit.UITableViewHeaderFooterView
+  @_Concurrency.MainActor @preconcurrency public func dequeueResuableCell<T>(forIndexPath indexPath: Foundation.IndexPath) -> T where T : UIKit.UITableViewCell
+  @_Concurrency.MainActor @preconcurrency public func dequeueReusableHeaderFooterView<T>() -> T where T : UIKit.UITableViewHeaderFooterView
 }
+#if compiler(>=5.3) && $NoncopyableGenerics
 extension Swift.Optional {
   public var isNil: Swift.Bool {
     get
   }
 }
+#else
+extension Swift.Optional {
+  public var isNil: Swift.Bool {
+    get
+  }
+}
+#endif
 extension SPaySdkDEBUG.NetworkState : Swift.Equatable {}
 extension SPaySdkDEBUG.NetworkState : Swift.Hashable {}
 extension SPaySdkDEBUG.NetworkState : Swift.RawRepresentable {}
@@ -205,9 +216,9 @@ extension SPaySdkDEBUG.SBAxis : Swift.Hashable {}
 extension SPaySdkDEBUG.SPayState : Swift.Equatable {}
 extension SPaySdkDEBUG.SPayState : Swift.Hashable {}
 extension SPaySdkDEBUG.SPayState : Swift.RawRepresentable {}
-extension SPaySdkDEBUG.SPayTokenState : Swift.Equatable {}
-extension SPaySdkDEBUG.SPayTokenState : Swift.Hashable {}
-extension SPaySdkDEBUG.SPayTokenState : Swift.RawRepresentable {}
 extension SPaySdkDEBUG.SEnvironment : Swift.Equatable {}
 extension SPaySdkDEBUG.SEnvironment : Swift.Hashable {}
 extension SPaySdkDEBUG.SEnvironment : Swift.RawRepresentable {}
+extension SPaySdkDEBUG.SPayMethod : Swift.Equatable {}
+extension SPaySdkDEBUG.SPayMethod : Swift.Hashable {}
+extension SPaySdkDEBUG.SPayMethod : Swift.RawRepresentable {}

@@ -6,11 +6,11 @@
 	<dict>
 		<key>Alert.strings</key>
 		<data>
-		Ym7Br9YJUhpNfJZJQeGS+e9vpuE=
+		mUodVBpo+8nyF8pQyJXWe2E0Y+Y=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		tVKiTKIWg3GTJK5/g4qxG494x4k=
+		QBmymaOpnynCd417FR2LrJ+teqQ=
 		</data>
 		<key>Auth.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Error.strings</key>
 		<data>
-		hR5YwyCXr5YaGJNxDg9VctHWCfE=
+		Ny7wBIRP0hg91Ht5Jc1bUso9eUM=
 		</data>
 		<key>Fake.strings</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/SPaySdkDEBUG-Swift.h</key>
 		<data>
-		s3X9Upb26C03z3pPrSIvpLxyV7A=
+		TAzMpd1vXy4igsJ1xPp+sTlhkWc=
 		</data>
 		<key>Headers/SPaySdkDEBUG.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fUXZlKWwtKWEhy1FxndW28HFHt4=
+		dj3jcel2aX93tXMBUipvKMqgmLU=
 		</data>
 		<key>LightSplash.json</key>
 		<data>
@@ -114,43 +114,43 @@
 		</data>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		iAl/XJp+lu8xiqQk0l4j5xb64no=
+		re2nyb3R6bC+PXKW3wsbqhoVIHc=
 		</data>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		wv8bMHffkjRhyGF+1IWt1o/rTLA=
+		RZ18jYTUzAEkU2hJIEymkWtZbTw=
 		</data>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kgTu0bkxxmRKmq13ffuJ456RVZU=
+		bWiNa5CYIslbdW0y/nkYhfeCnv4=
 		</data>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wv8bMHffkjRhyGF+1IWt1o/rTLA=
+		RZ18jYTUzAEkU2hJIEymkWtZbTw=
 		</data>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fnj7NUk1uSHDxoVU2QJk4HT6+C0=
+		kY1/nrYSsJ5/C5xus/QM5ILZ8qU=
 		</data>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		iAl/XJp+lu8xiqQk0l4j5xb64no=
+		re2nyb3R6bC+PXKW3wsbqhoVIHc=
 		</data>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/dMb8x/sLY7tbT8rsmJcbDDA3mY=
+		0aAdpJAJTb5MNN+j/w5dcOLg4XI=
 		</data>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		WDubsnHIjeN8fyIafp48FBLO6YQ=
+		aIk1x0Vl+LORYLDT6A8M8nzQINE=
 		</data>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/dMb8x/sLY7tbT8rsmJcbDDA3mY=
+		0aAdpJAJTb5MNN+j/w5dcOLg4XI=
 		</data>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4DvS6nJjDO4zKu/pTiCnVHW90ZQ=
+		4DcobIwDPmmBdLEvNSwXGhjH1k8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>RemoteConfigIOSv3.json</key>
 		<data>
-		2ENARgmSkQJAzKIdFw+FAZzcdP4=
+		/9B/xjDWVwWm/nGxpREc6M9iFpQ=
 		</data>
 		<key>SB Sans Display Semibold.ttf</key>
 		<data>
@@ -260,14 +260,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+1S8xjtbpTOmv41v0n4vFo97B8zX40yVqSNgGsl4gKk=
+			oKnBY5wy8IDIYjmsLhxGBdoiZvA6GY9EDo2EzlVcIs0=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ytBTgcSfmbE9OI6P0aVxTVdktV7IiIrq4CRKOxU2EBo=
+			5oV2GYL9QVWYR/HgQkc+W65tX+jjX3bUBL2fWxpMfMs=
 			</data>
 		</dict>
 		<key>Auth.json</key>
@@ -358,7 +358,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CCYfOx8CL3ad+2mT+otU9q0ta9/dZkB0mUhwZI1sYow=
+			dTbPbQEdbc9QEuR4B0nYHz2A/TbjwGEUqr5CM7YtPH8=
 			</data>
 		</dict>
 		<key>Fake.strings</key>
@@ -379,7 +379,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QVGSJfCSxOXZHrn47feaHu6PZXIX+T9ooH8Wj3kE/6c=
+			y6UXtWyn7Bi8PXEyc1/SZ7Ix4uR7aHP4CiVqDMXErSg=
 			</data>
 		</dict>
 		<key>Headers/SPaySdkDEBUG.h</key>
@@ -442,70 +442,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YxGLm3RBYxVktg2PGdrA2iMqEoASVo0hw+NBHoDnM3s=
+			IpM80WPTptFpRxKIcc7SNR9RhnwhsQM+z1T5tSbKcGQ=
 			</data>
 		</dict>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3dNZIyurfu9AHVbZByqux1npHbj2ScsYGoTusLzjvQ=
+			OIxN9ahBNtJ+SNUedpAR3Yn0XK4eyOMsl35zEf0WhE0=
 			</data>
 		</dict>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GbD7BK0A3YiWxmo6bH+4IRxbuY6CZcC56E2WDW/3xY8=
+			TDluT7wjRAVo0zOWUPD/kaWPZUmQQnc+L+vH70wyuqc=
 			</data>
 		</dict>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3dNZIyurfu9AHVbZByqux1npHbj2ScsYGoTusLzjvQ=
+			OIxN9ahBNtJ+SNUedpAR3Yn0XK4eyOMsl35zEf0WhE0=
 			</data>
 		</dict>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pQUnVgLg7/18ey4Ga3qufw+U5xISwszCqEwlAiww8SY=
+			Jqc87v/4B5IeOqNvf1jVC9rCTguaFI2502ZbhyZpt+s=
 			</data>
 		</dict>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YxGLm3RBYxVktg2PGdrA2iMqEoASVo0hw+NBHoDnM3s=
+			IpM80WPTptFpRxKIcc7SNR9RhnwhsQM+z1T5tSbKcGQ=
 			</data>
 		</dict>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			imzQjfWeeGR3hSXZ8P0bjUYCHzGFW5nxDf0W0LjF9DM=
+			iCBCI9PSHmoIdaFCEs+sIqQc8dqHZCXGZNgJy7P9+IM=
 			</data>
 		</dict>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CNlBi7wGGF28EGksdxSl9GLeLddcg8U6i3vv4qe6cUM=
+			1aZZFoVU5MaBavCNxynuAaSZfqF+2aEfOWPAwfvMGxQ=
 			</data>
 		</dict>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			imzQjfWeeGR3hSXZ8P0bjUYCHzGFW5nxDf0W0LjF9DM=
+			iCBCI9PSHmoIdaFCEs+sIqQc8dqHZCXGZNgJy7P9+IM=
 			</data>
 		</dict>
 		<key>Modules/SPaySdkDEBUG.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gTp9xCAg4vKIY+XrmcxjnAqQi4F37fy8igeFtCYkdrs=
+			4WJkNAEfDovkD/E2mY+STbRm+AG17c0RlxNx+1Hw5ho=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -596,7 +596,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xnhIuM4CxYwTgMceQWL0KxDAmfZXkC1BRSH2bTOKhKE=
+			gUAcpOrs2b0cG/RYBM75oZoc9qQpUhO3BqxvKD9QZTg=
 			</data>
 		</dict>
 		<key>SB Sans Display Semibold.ttf</key>
